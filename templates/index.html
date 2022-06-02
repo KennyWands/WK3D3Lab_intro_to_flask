@@ -11,14 +11,15 @@
 
 <body>
     <h1>Orders</h1>
-    {% for order in order_list %}
+    {% for order in orders %}
     <div>
         <p>
             {{order.name}}: <b>{{order.item}}</b>
+            <a href="/order/{{orders.index(order)}}"> click me</a>
         </p>
     </div>
     {% endfor %}
-    <a href="order.html"> click me</a>
+
 </body>
 
 </html>
